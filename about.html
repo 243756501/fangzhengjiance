@@ -1,0 +1,290 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>公司简介</title>
+		<link href="css/global.css" rel="stylesheet" type="text/css" />
+		<link href="css/subframe.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="css/zTreeStyle.css" />
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+		<script src="js/global.js" type="text/javascript"></script>
+		<script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+		<script src="js/common.js" type="text/javascript"></script>
+		<script src="js/jquery.ztree.core.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div>
+			<!--~头部~-->
+			<div class="header">
+				<div class="topNav">
+					<div class="top">
+						<ul>
+							<li class="li-operation">
+								<a href="/">网站首页</a>
+							</li>
+							<li class="li-operation">
+								<a href="javascript:;" onclick="_gscms_AddFavorite2(window.location,document.title);">加入收藏</a>
+							</li>
+							<li class="li-operation">
+								<a href="javascript:;" onclick="_gscms_SetHome(this,window.location);">设为主页</a>
+							</li>
+							<li class="li-tel">服务热线：0571-87855155</li>
+						</ul>
+					</div>
+					<!--~导航~-->
+					<div class="navbox">
+						<div class="nav">
+							<ul class="clearfix">
+								<li class="drop-menu-effect index">
+									<a target="_blank" href="index.aspx"><span>网站首页</span></a>
+								</li>
+								<li class="drop-line"></li>
+								<li class="drop-menu-effect channel1">
+									<a target="_blank" href="about.aspx"><span>公司概况</span></a>
+									<ul class="submenu">
+										<li>
+											<a href="#">公司简介</a>
+										</li>
+										<li>
+											<a href="#">资质能力</a>
+										</li>
+									</ul>
+								</li>
+								<li class="drop-line"></li>
+								<li class="drop-menu-effect channel2">
+									<a target="_blank" href="news.aspx"><span>新闻动态</span></a>
+									<ul class="submenu">
+										<li>
+											<a href="#">新闻动态</a>
+										</li>
+										<li>
+											<a href="#">通知公告</a>
+										</li>
+										<li>
+											<a href="#">行业资讯</a>
+										</li>
+									</ul>
+								</li>
+								<li class="drop-line"></li>
+								<li class="drop-menu-effect channel3">
+									<a target="_blank" href="business.aspx"><span>业务范围</span></a>
+									<ul class="submenu">
+										<li>
+											<a href="#">计量校准</a>
+										</li>
+										<li>
+											<a href="#">技术培训</a>
+										</li>
+										<li>
+											<a href="#">质量鉴定</a>
+										</li>
+										<li>
+											<a href="#">检测研发</a>
+										</li>
+									</ul>
+								</li>
+								<li class="drop-line"></li>
+								<li class="drop-menu-effect channel4">
+									<a target="_blank" href="#"><span>内部登录</span></a>
+								</li>
+								<li class="drop-line"></li>
+								<li class="drop-menu-effect channel5">
+									<a target="_blank" href="contact.aspx"><span>联系我们</span></a>
+									<ul class="submenu">
+										<li>
+											<a href="#">联系我们</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--~背景~-->
+			<div class="sub-slidebg">
+			</div>
+			<!--~消息块~-->
+			<div class="moduleer">
+				<div class="iptsear">
+					<span>搜索：</span><input type="text" name="k" id="search_keywords" value="请输入关键字" onfocus="if (value =='请输入关键字'){value =''}" onblur="if (value ==''){value='请输入关键字'}" /><input type="hidden" name="type" id="search_channeltype" value="article" style="display: none;" />
+					<a href="javascript:;" onclick="CheckSearchData()" id="search_btn"><img src="images/search-btn.png" /></a>
+				</div>
+				<div class="info-roll">
+					<span>最新消息：</span>
+					<div class="bd">
+						<ul class="infoList">
+							<li>
+								<a href="http://www.SuperSlide2.com" target="_blank">中国打破了世界软件巨头规则</a>
+							</li>
+							<li>
+								<a href="http://www.SuperSlide2.com" target="_blank">口语：会说中文就能说英语！</a>
+							</li>
+							<li>
+								<a href="http://www.SuperSlide2.com" target="_blank">农场摘菜不如在线学外语好玩</a>
+							</li>
+							<li>
+								<a href="http://www.SuperSlide2.com" target="_blank">数理化老师竟也看学习资料？</a>
+							</li>
+							<li>
+								<a href="http://www.SuperSlide2.com" target="_blank">学英语送ipad2,45天突破听说</a>
+							</li>
+							<li>
+								<a href="http://www.SuperSlide2.com" target="_blank">学外语，上北外！</a>
+							</li>
+							<li>
+								<a href="http://www.SuperSlide2.com" target="_blank">那些无法理解的荒唐事</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript">
+				jQuery(".info-roll").slide({
+					mainCell: ".bd ul",
+					autoPage: true,
+					effect: "topLoop",
+					autoPlay: true,
+					easing: "easeInQuint",
+					delayTime: 700
+				});
+			</script>
+			<!--~内容部分~-->
+			<div class="wrapper">
+				<div class="j-left">
+					<div class="title">公司概况/ABOUT</div>
+					<div class="top">
+						<ul id="menuztree" class="menulist ztree">
+
+						</ul>
+						<script>
+							var setting = {
+								view: {
+									showLine: false
+								},
+								data: {
+
+									simpleData: {
+										enable: true
+									}
+								},
+								callback: {
+									onClick: onClick
+								}
+							};
+
+							function onClick(event, treeId, treeNode, clickFlag) {
+								$('#menuztree a').removeClass('ztree-active');
+								$('#menuztree a').eq(treeNode.index).addClass('ztree-active');
+							}
+
+							var zNodes = [{
+									id: 1,
+									pId: 0,
+									index:0,
+									name: "公司简介",
+									open: true,
+							    },								
+								{
+									id: 2,
+									pId: 0,
+									index:1,
+									name: "资质能力",
+									open: true,
+								},																																			
+							];
+
+							$(document).ready(function() {
+								$.fn.zTree.init($("#menuztree"), setting, zNodes);
+							});
+						</script>				
+						<div class="online">
+							<div class="bussiness item"></div>
+							<div class="customer item"></div>
+							<div class="process item"></div>
+							<div class="fee item"></div>
+						</div>
+					</div>
+					<div class="bottom">
+						<div class="banner"></div>
+						<div class="info">
+							<div>地址:浙江省杭州市留和路56号中讯大厦1-2F</div>
+							<div>电话:0571-87855155</div>
+							<div>传真:0571-87855133</div>
+							<div>邮箱:fz@fangxheng.com</div>
+							<div>网址:www.zjufc.com</div>
+						</div>
+					</div>
+				</div>
+				<div class="j-right">
+					<div class="rounter">
+						<img src="images/ico04.png" />
+						<span>当前位置:</span>
+						<span class="item">首页</span><span> > </span><span class="item">公司概况</span><span> > </span><span class="now item">公司简介</span>
+					</div>
+					<div class="about-main">
+						<div class="title">浙江省方正校准有限公司机构概况</div>
+						<div class="content">
+							&nbsp;浙江省方正校准有限公司成立于2004年，是浙江省计量科学研究院(以下简称计量院)下属全资公司,经过二十多年发展,目前是浙江省内规模较大,综合实力领先的第三方校准检测机构
+							</br>
+							</br>
+							&nbsp;<span>一、业务范围</span>
+							</br>
+							</br>
+							&nbsp;经营范围:各类计量器具及产品的检定、校准、检验、测试、修理、安装、鉴定业务;各类检测技术及计量产品的研发;检测技术咨询服务;培训服务.提供质量鉴定、3C工厂审查等市场化技术服务.
+							</br>
+							</br>
+							&nbsp;<span>二、资质能力</span>
+							</br>
+							</br>
+							&nbsp;公司在多个学科和领域建立计量标准104项，通过实验室认可校准检测项目145项,部分计量标准与浙江省社会公用计量标准测量范围/准确度等级相同，可开展几何量、热血、电磁、光学、声学、化学、无线电、时间频率、电离辐射等十大计量领域的计量器具校准服务。
+							</br>
+							</br>
+							&nbsp;<span>三、经营规模</span>
+							</br>
+							</br>
+							&nbsp;公司现拥有实验室面积4000多平方米,仪器设备资产1400多万元,人员近80人,中高级职称人员约占总人数的65%以上.目前公司设有长度(力学)、热工、综合(环境化学及电学)、现场检测等4个专业实验室.公司秉持"科学、公正、诚信、优质、高效"服务理念,对所有业务委托及出具的每一分证书报告负责.
+							</br>
+							</br>
+							&nbsp;<span>四、特色服务</span>
+							</br>
+							</br>
+							&nbsp;<span class="bold">代送代检</span>
+							</br>
+							</br>
+							&nbsp;公司提供计量器具打包手里服务,客户可将所有需要送检的器具集中打包,公司会在最短的时间内完成相关检测工作.对于一些目前公司无法承担的检定、检测、校准业务,将为您免费送至浙江省计量院或上海市计量院检测,出具相关证书报告.同时利用公司人脉、合作资源为客户争取尽可能的收费优惠.
+							</br>
+							</br>
+							&nbsp;<span class="bold">现场检测</span>
+							</br>
+							</br>
+							&nbsp;为加强服务响应度,公司抽调不同专业技术骨干打造了一支高效、精干的现场检测服务队伍.对收到的现场检测业务委托在3天内予以答复响应,尽快安排技术人员赴现场作业.
+							</br>
+							</br>
+							&nbsp;<span class="bold">咨询培训</span>
+							</br>
+							</br>
+							&nbsp;依托浙江省计量院高精尖技术专家资源,为企业提供生产过程全产业链相关计量检测技术咨询及培训.内容涵盖计量认证、计量建标、实验室认可、电平衡测试、企业能管中心建设、注册计量师、测量不确定度等.为企业提供计量器具销售咨询及个性化实验室、体系建设全过程整体解决方案.
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--~清除浮动~-->
+			<div class="clear"></div>
+			<!--~尾部~-->
+			<div class="footer">
+				<p>版权所有：浙江省方正校准有限公司 技术支持：浙江省质量技术监督信息中心</p>
+				<p>地址：浙江省杭州市留和路56号中讯大厦1-2F</p>
+				<p>浙ICP备13018079号-2</p>
+			</div>
+		</div>
+		<script type="text/javascript">
+			dropMenu(".drop-menu-effect");
+			$('.nav li.index').addClass("channel1");
+		</script>
+	</body>
+
+</html>

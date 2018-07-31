@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>新闻动态</title>
+		<link href="css/global.css" rel="stylesheet" type="text/css" />
+		<link href="css/subframe.css" rel="stylesheet" type="text/css" />
+		<link href="css/zTreeStyle.css" rel="stylesheet" type="text/css" />
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+		<script src="js/global.js" type="text/javascript"></script>
+		<script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+		<script src="js/common.js" type="text/javascript"></script>
+		<script src="js/jquery.ztree.core.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div>
+			<!--~头部~-->
+			<div class="header">
+				<div class="topNav">
+					<div class="top">
+						<ul>
+							<li class="li-operation">
+								<a href="/">网站首页</a>
+							</li>
+							<li class="li-operation">
+								<a href="javascript:;" onclick="_gscms_AddFavorite2(window.location,document.title);">加入收藏</a>
+							</li>
+							<li class="li-operation">
+								<a href="javascript:;" onclick="_gscms_SetHome(this,window.location);">设为主页</a>
+							</li>
+							<li class="li-tel">服务热线：0571-87855155</li>
+						</ul>
+					</div>
+					<!--~导航~-->
+					<div class="navbox">
+						<div class="nav">
+							<ul class="clearfix">
+								<li class="drop-menu-effect index">
+									<a target="_blank" href="index.aspx"><span>网站首页</span></a>
+								</li>
+								<li class="drop-line"></li>
+								<li class="drop-menu-effect channel1">
+									<a target="_blank" href="about.aspx"><span>公司概况</span></a>
+									<ul class="submenu">
+										<li>
+											<a href="#">公司简介</a>
+										</li>
+										<li>
+											<a href="#">资质能力</a>
+										</li>
+									</ul>
+								</li>
+								<li class="drop-line"></li>
+								<li class="drop-menu-effect channel2">
+									<a target="_blank" href="news.aspx"><span>新闻动态</span></a>
+									<ul class="submenu">
+										<li>
+											<a href="#">新闻动态</a>
+										</li>
+										<li>
+											<a href="#">通知公告</a>
+										</li>
+										<li>
+											<a href="#">行业资讯</a>
+										</li>
+									</ul>
+								</li>
+								<li class="drop-line"></li>
+								<li class="drop-menu-effect channel3">
+									<a target="_blank" href="business.aspx"><span>业务范围</span></a>
+									<ul class="submenu">
+										<li>
+											<a href="#">计量校准</a>
+										</li>
+										<li>
+											<a href="#">技术培训</a>
+										</li>
+										<li>
+											<a href="#">质量鉴定</a>
+										</li>
+										<li>
+											<a href="#">检测研发</a>
+										</li>
+									</ul>
+								</li>
+								<li class="drop-line"></li>
+								<li class="drop-menu-effect channel4">
+									<a target="_blank" href="#"><span>内部登录</span></a>
+								</li>
+								<li class="drop-line"></li>
+								<li class="drop-menu-effect channel5">
+									<a target="_blank" href="contact.aspx"><span>联系我们</span></a>
+									<ul class="submenu">
+										<li>
+											<a href="#">联系我们</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--~背景~-->
+			<div class="sub-slidebg">
+			</div>
+			<!--~消息块~-->
+			<div class="moduleer">
+				<div class="iptsear">
+					<span>搜索：</span><input type="text" name="k" id="search_keywords" value="请输入关键字" onfocus="if (value =='请输入关键字'){value =''}" onblur="if (value ==''){value='请输入关键字'}" /><input type="hidden" name="type" id="search_channeltype" value="article" style="display: none;" />
+					<a href="javascript:;" onclick="CheckSearchData()" id="search_btn"><img src="images/search-btn.png" /></a>
+				</div>
+				<div class="info-roll">
+					<span>最新消息：</span>
+					<div class="bd">
+						<ul class="infoList">
+							<li>
+								<a href="http://www.SuperSlide2.com" target="_blank">中国打破了世界软件巨头规则</a>
+							</li>
+							<li>
+								<a href="http://www.SuperSlide2.com" target="_blank">口语：会说中文就能说英语！</a>
+							</li>
+							<li>
+								<a href="http://www.SuperSlide2.com" target="_blank">农场摘菜不如在线学外语好玩</a>
+							</li>
+							<li>
+								<a href="http://www.SuperSlide2.com" target="_blank">数理化老师竟也看学习资料？</a>
+							</li>
+							<li>
+								<a href="http://www.SuperSlide2.com" target="_blank">学英语送ipad2,45天突破听说</a>
+							</li>
+							<li>
+								<a href="http://www.SuperSlide2.com" target="_blank">学外语，上北外！</a>
+							</li>
+							<li>
+								<a href="http://www.SuperSlide2.com" target="_blank">那些无法理解的荒唐事</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript">
+				jQuery(".info-roll").slide({
+					mainCell: ".bd ul",
+					autoPage: true,
+					effect: "topLoop",
+					autoPlay: true,
+					easing: "easeInQuint",
+					delayTime: 700
+				});
+			</script>
+			<!--~内容部分~-->
+			<div class="wrapper">
+				<div class="j-left">
+					<div class="title">新闻动态/NEWS</div>
+					<div class="top">
+						<ul id="menuztree" class="menulist ztree">
+
+						</ul>
+						<script>
+							var setting = {
+								view: {
+									showLine: false
+								},
+								data: {
+
+									simpleData: {
+										enable: true
+									}
+								},
+								callback: {
+									onClick: onClick
+								}
+							};
+
+							function onClick(event, treeId, treeNode, clickFlag) {
+								$('#menuztree a').removeClass('ztree-active');
+								$('#menuztree a').eq(treeNode.index).addClass('ztree-active');
+							}
+
+							var zNodes = [{
+									id: 1,
+									pId: 0,
+									index:0,
+									name: "新闻动态",
+									open: true,
+							    },								
+								{
+									id: 2,
+									pId: 0,
+									index:1,
+									name: "通知公告",
+									open: true,
+								},								
+								{
+									id: 3,
+									pId: 0,
+									index:2,
+									name: "行业资讯",
+									open: false
+								},																						
+							];
+
+							$(document).ready(function() {
+								$.fn.zTree.init($("#menuztree"), setting, zNodes);
+							});
+						</script>
+						<div class="online">
+							<div class="bussiness item"></div>
+							<div class="customer item"></div>
+							<div class="process item"></div>
+							<div class="fee item"></div>
+						</div>
+					</div>
+					<div class="bottom">
+						<div class="banner"></div>
+						<div class="info">
+							<div>地址:浙江省杭州市留和路56号中讯大厦1-2F</div>
+							<div>电话:0571-87855155</div>
+							<div>传真:0571-87855133</div>
+							<div>邮箱:fz@fangxheng.com</div>
+							<div>网址:www.zjufc.com</div>
+						</div>
+					</div>
+				</div>
+				<div class="j-right">
+					<div class="rounter">
+						<img src="images/ico04.png" />
+						<span>当前位置:</span>
+						<span class="item">首页</span><span> > </span><span class="item">新闻动态</span><span> > </span><span class="now item">新闻动态</span>
+					</div>
+					<div class="news-main">
+						<div class="head">
+							<div class="title">不忘初心 凝心聚力谋发展-—浙江省方正校准有限公司召开2018上半年度工作会</div>
+							<div class="time">[发布时间： 2018/7/23 9:43:43]</div>
+						</div>
+						<div class="body">
+							 7月20日，方正公司召开2018上半年度工作会议，会议总结了2018上半年的工作，部署了2018下半年的工作重点。院分管领导何虹、刘浩，公司领导班子、中层及支委等参加会议。会议由公司董事长傅海轮主持。
+    会上公司中层围绕各部门业务开展、能力建设、项目提升、内部管理等方面汇报了2018上半年度工作，提出工作重点难点和下年年的工作计划。董事长傅海轮全面总结了上半年的工作成绩：上半年，公司员工勇于迎接市场挑战，开拓创新，全力以赴求发展，业务工作进展良好，能力建设持续提升，管理改进继续加强。同时指出，当前工作仍存在着业务覆盖面不够广、业务开拓重点不明确、内部管理效率有待进一步提高等问题，并对下半年工作进行了部署：要进一步坚持以市场为中心，精准定位市场，做好新业务开拓，努力提高市场响应度；增强紧迫感，加快能力建设，做好资质认定（扩项）及质量管理工作；以卓越绩效指引，全面加强管理工作；强化宣传，加快门户网站、OA等信息化工作步伐；强化党要管党，加强党建和党风廉政建设。
+    何虹充分肯定了上年工作成绩，同时就公司领导班子建设和工作提出了三点要求，一是要进一步加强公司领导班子自身建设，提高科学决策能力和水平；二是要不忘初心、凝心聚力，牢记自身使命，发挥专业优势开拓业务，提高服务能力；三是坚持科学、严谨工作态度，抓重点、转落实，积极稳妥推进各项工作开展。刘浩进一步鼓励大家要凝心聚力，通力合作，确保全年任务顺利完成。
+						</div>
+						<div class="extra">
+							<div>上一篇:<span>黑龙江破获一起销售假冒伪劣消防产品刑事案件</span></div>
+							<div>下一篇:<span>我中心召开"认证从业人员风险、责任意识和廉洁执业纪律要求"专题培训会</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--~清除浮动~-->
+			<div class="clear"></div>
+			<!--~尾部~-->
+			<div class="footer">
+				<p>版权所有：浙江省方正校准有限公司 技术支持：浙江省质量技术监督信息中心</p>
+				<p>地址：浙江省杭州市留和路56号中讯大厦1-2F</p>
+				<p>浙ICP备13018079号-2</p>
+			</div>
+		</div>
+		<script type="text/javascript">
+			dropMenu(".drop-menu-effect");
+			$('.nav li.index').addClass("channel1");
+		</script>
+	</body>
+
+</html>
